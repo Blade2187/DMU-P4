@@ -23,7 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
   if (window.opener !== null) {
+    document.querySelector("html").classList.add("no-scroll");
     document.querySelector("body").classList.add("no-scroll");
+    document.getElementById("content").classList.add("no-scroll");
     document.getElementById("popOutBtn").disabled = true;
   }
   

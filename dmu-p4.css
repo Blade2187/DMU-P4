@@ -1,10 +1,10 @@
-body {
+html {
   background-color: #426;
   font-family: "Trebuchet MS", sans-serif;
   width: max-content;
 }
 
-body.no-scroll {
+.no-scroll {
   overflow: hidden;
 }
 
