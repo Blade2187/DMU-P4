@@ -3,6 +3,10 @@ body {
   font-family: "Trebuchet MS", sans-serif;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 p {
   color: #777;
 }
@@ -41,6 +45,12 @@ button {
   border: 2px solid #47C;
   border-radius: 8px;
   user-select: none;
+}
+
+button:disabled {
+  color: #888;
+  background-color: #666;
+  border: 2px solid #666;
 }
 
 button.realfake {

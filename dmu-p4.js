@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
+  if (window.opener !== null) {
+    document.querySelector("body").classList.add("no-scroll");
+    document.getElementById("popOutBtn").disabled = true;
+  }
+  
 });
 
 
