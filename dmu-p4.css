@@ -1,0 +1,88 @@
+body {
+  background-color: #426;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+p {
+  color: #777;
+}
+
+a, a:visited {
+  color: #0483CE;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0697D8;
+  text-decoration: underline;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+legend {
+  color: #DDD;
+  float: left;
+  font-size: 120%;
+  min-width: 160px;
+}
+
+button {
+  color: #DDD;
+  font-weight: bold;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 100%;
+  background-color: #47C;
+  padding: 8px;
+  min-width: 120px;
+  border: 2px solid #47C;
+  border-radius: 8px;
+  user-select: none;
+}
+
+button.realfake {
+  margin-right: 8px;
+}
+
+button.realfake[aria-pressed=true] {
+  background-color: #B54;
+  border: 2px solid #B54;
+}
+
+label {
+  display: inline-block;
+  color: #777;
+  font-weight: bold;
+  background-color: #238;
+  padding: 8px;
+  margin-right: 8px;
+  min-width: 120px;
+  border: 2px solid #238;
+  border-radius: 8px;
+  user-select: none;
+}
+
+
+label:nth-of-type(2) {
+  background-color: #832;
+  border: 2px solid #832;
+}
+
+label:has(input[type=radio]:checked) {
+  color: #DDD;
+  background-color: #47C;
+  border: 2px solid #DDD;
+}
+
+label:has(input[type=radio]:checked):nth-of-type(2) {
+  color: #DDD;
+  background-color: #B54;
+  border: 2px solid #DDD;
+}
+
+label > input[type=radio] {
+  appearance: none;
+}
