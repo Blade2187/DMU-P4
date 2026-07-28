@@ -1,6 +1,7 @@
 body {
   background-color: #426;
   font-family: "Trebuchet MS", sans-serif;
+  width: max-content;
 }
 
 body.no-scroll {
