@@ -49,6 +49,6 @@ function resetAll() {
 
 
 function popOut() {
-  window.open("index.html", "popout", "width=620,height=580,popup=true");
+  window.open("index.html", "popout", "width=580,height=620,popup=true");
 }
 

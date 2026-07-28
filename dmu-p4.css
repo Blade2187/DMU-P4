@@ -2,12 +2,19 @@ html {
   background-color: #426;
   font-family: "Trebuchet MS", sans-serif;
   width: 100vw;
-  height: 100dvh;
+  height: 100svh;
   overscroll-behavior: none;
+  touch-action: manipulation;
 }
 
 body {
+  margin: 0px;
+  overscroll-behavior: none;
+}
+
+#content {
   width: max-content;
+  padding: 8px;
   overscroll-behavior: none;
 }
 
@@ -31,6 +38,8 @@ a:hover {
 
 fieldset {
   border: none;
+  padding-left: 4px;
+  padding-right: 4px;
   display: flex;
   align-items: center;
 }
@@ -48,7 +57,7 @@ button {
   font-family: "Trebuchet MS", sans-serif;
   font-size: 100%;
   background-color: #47C;
-  padding: 8px;
+  padding: 10px;
   margin-right: 2px;
   min-width: 120px;
   border: 2px solid #47C;
@@ -62,6 +71,10 @@ button:disabled {
   border: 2px solid #666;
 }
 
+button.realfake {
+  min-width: 80px;
+}
+
 button.realfake[aria-pressed=true] {
   background-color: #B54;
   border: 2px solid #B54;
@@ -72,7 +85,7 @@ label {
   color: #777;
   font-weight: bold;
   background-color: #238;
-  padding: 8px;
+  padding: 10px;
   margin-right: 8px;
   min-width: 120px;
   border: 2px solid #238;
