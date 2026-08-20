@@ -14,8 +14,17 @@ body {
 
 #content {
   width: max-content;
-  padding: 8px;
   overscroll-behavior: none;
+  transform-origin: top left;
+}
+
+#main {
+  padding: 8px 8px 2px 8px;
+}
+
+#footer {
+  padding-left: 8px;
+  margin-top: -8px;
 }
 
 .no-scroll {

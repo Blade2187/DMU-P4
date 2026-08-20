@@ -31,6 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
   
   document.addEventListener("keydown", keyHandler);
 
+  let resizer = new ResizeObserver((entries) => {
+    entries.forEach((entry) => {
+      let target = document.querySelector("#main");
+      let scale = Math.min(
+        window.innerWidth / target.offsetWidth,
+        window.innerHeight / target.offsetHeight
+      );
+      entry.target.style.transform = "scale(" + scale + ")";
+    });
+  });
+  resizer.observe(document.querySelector("#content"));
+
 });
 
 
