@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("popOutBtn").disabled = true;
   }
   
+  document.addEventListener("keydown", keyHandler);
+
 });
 
 
@@ -60,4 +62,21 @@ function toggleLayout() {
  
   let content = document.getElementById("content");
   content.classList.toggle("alt-layout", pressed)
+}
+
+
+function keyHandler(event) {
+  switch (event.key) {
+    case "r":
+      resetAll();
+      break;
+    case "p":
+      popOut();
+      break;
+    case "l":
+      toggleLayout();
+      break;
+    default:
+      break;
+  }
 }
