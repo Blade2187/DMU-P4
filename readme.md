@@ -1,7 +1,7 @@
 ﻿DMU P4 Helper
 ---
 
-v0.1
+v0.2
 
 A mini browser app to help keep track of all the crazy nonsense happening during FFXIV's Dancing Mad (Ultimate) Phase 4 ("Kefka Says").
 

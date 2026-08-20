@@ -52,3 +52,12 @@ function popOut() {
   window.open("index.html", "popout", "width=580,height=620,popup=true");
 }
 
+
+function toggleLayout() {
+  let toggle = document.getElementById("layoutBtn");
+  let pressed = !(toggle.getAttribute('aria-pressed') === 'true');
+  toggle.setAttribute('aria-pressed', pressed);
+ 
+  let content = document.getElementById("content");
+  content.classList.toggle("alt-layout", pressed)
+}
