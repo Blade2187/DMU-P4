@@ -63,7 +63,7 @@ function resetAll() {
 
 
 function popOut() {
-  window.open("index.html", "popout", "width=580,height=620,popup=true");
+  window.open("index.html", "popout", "width=560,height=560,popup=true");
 }
 
 

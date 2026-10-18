@@ -136,3 +136,43 @@ label:has(input[type=radio]:checked):nth-of-type(2) {
 label > input[type=radio] {
   appearance: none;
 }
+
+icon {
+  color: #DDD;
+  text-align: center;
+  min-width: 30px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+water::before {
+  content: "\01F4A7";
+}
+
+lightning::before {
+  content: "";
+}
+
+accel::before {
+  content: "\01F3B2";
+}
+
+gaze::before {
+  content: "\01F441\FE0F";
+}
+
+inferno::before {
+  content: "\01F525";
+}
+
+tsunami::before {
+  content: "\01F30A";
+}
+
+thunder::before {
+  content: "\26A1";
+}
+
+blizzard::before {
+  content: "\2744\FE0F";
+}
